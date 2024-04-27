@@ -1,4 +1,4 @@
-# 2024 apr 25th thu pm 04:30 utc+09:00
+# 2024 apr 27th thu pm 12:14 utc+09:00
 
 # sum of evens 1 ~ 10
 def sum_for(a, b):
@@ -34,7 +34,7 @@ show(e)
 
 # class using
 class prime:
-    def secondary(self, k):
+    def secondary(self, k): # sum 1 to k
         j, sum = 0, 0
         while(j < k):
             j += 1
@@ -42,8 +42,18 @@ class prime:
                 continue
             sum += j
         return sum
+    def tertiary(self, l): # avg 1 to l
+        m, total, avg = 0, 0, 0
+        while(m < l+1):
+            total += m
+            m += 1
+            if(m == l):
+                avg = total / l+1
+        return avg
 
 g = prime()
 q = g.secondary(10)
+now = g.tertiary(10)
 
 show(q) # using print function again
+show(now)
