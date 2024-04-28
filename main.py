@@ -51,9 +51,25 @@ class prime:
                 avg = total / l+1
         return avg
 
-g = prime()
-q = g.secondary(10)
-now = g.tertiary(10)
+# class child using
+# sum 10(a) under to k
+class sub(prime):
+    def another(self, k):
+        a, sum = 10, 0
+        while(k < a):
+            a-= 1
+            sum += a
+            if (a == k):
+                break
+        return sum
 
-show(q) # using print function again
-show(now)
+g = prime()
+c = sub()
+q = c.secondary(10)
+now = g.tertiary(10)
+result = c.another(5) # 
+
+# using print function
+show(q)
+show(int(now))
+show(result)
