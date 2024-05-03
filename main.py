@@ -1,4 +1,4 @@
-# 2024 apr 27th thu pm 12:14 utc+09:00
+# 2024 may 3rd fri am 10:35 utc+09:00
 
 # sum of evens 1 ~ 10
 def sum_for(a, b):
@@ -63,13 +63,27 @@ class sub(prime):
                 break
         return sum
 
+class third(sub):
+    def more(self, z):
+        a, sum, avg = 0, 0, 0
+        while(a < z):
+            a+=1
+            sum+=a
+            if(a == z):
+                avg = sum / z
+                break
+        return avg
+
 g = prime()
 c = sub()
+l = third()
 q = c.secondary(10)
 now = g.tertiary(10)
-result = c.another(5) # 
+result = c.another(5)
+averge = l.more(5)
 
 # using print function
 show(q)
 show(int(now))
 show(result)
+show(averge)
