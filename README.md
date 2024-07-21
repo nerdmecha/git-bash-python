@@ -1,6 +1,5 @@
 # git-bash-python
-I'M BACK
+I'LL MY BEST
 <p>Used Tools Visual Studio Code, Sourcetree, Git Bash</p>
 <p>Used Languages Python</p>
-<br />
-<strong>Debugging Practice</strong>
+<p>Using Library not decided yet</p>
