@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 
 from functions import *
 
-# 2024 jul 21st sun pm 02:35 utc+09:00
+# 2024 jul 22st mon pm 08:25 utc+09:00
 # X(Twitter) @benevolent2023 | Discord nerdmecha#1806 | GameJolt @nerdmecha
 
-figureCloud()
+figureCloud() # active words & clouds

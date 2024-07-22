@@ -7,8 +7,9 @@ def figureCloud():
     plt.figure(figsize=(10, 10))
     plt.imshow(cloud, interpolation="bilinear")
     plt.axis("off")
-    plt.savefig("pics/cloud.jpg")
+    plt.savefig("imgs/cloud.jpg")
     plt.show()
+
 words = {
     'Tokusatsu': 15,
     'Video Games': 14,
