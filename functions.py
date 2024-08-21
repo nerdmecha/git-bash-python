@@ -1,4 +1,4 @@
-import tkinter as tt
+import tkinter as tk
 from wordcloud import WordCloud
 from matplotlib import pyplot as plt
 from gtts import gTTS
@@ -33,21 +33,20 @@ cloud = WordCloud(
 
 # langs & speech
 def inputSpeaker():
+    lang = input("Select Your Language - English or Korean : ")
+
+    while "English" not in lang and "Korean" not in lang:
+        lang = input("PLZ Input Again - English or Korean : ")
+
+    if "English" in lang:
+        text = input("Input Eng Lines : ")
+        tts = gTTS(text=text, lang='en')
+    elif "Korean" in lang:
+        text = input("한국어로 문장을 입력하세요 : ")
+        tts = gTTS(text=text, lang='ko')
+    else:
+        tts = gTTS(text="Good Bye", lang='en')
+        
     tts.save("auds/speech.mp3")
     t.sleep(5)
     playsound("auds/speech.mp3")
-
-
-lang = input("Select Your Language - English or Korean : ")
-
-while "English" not in lang and "Korean" not in lang:
-    lang = input("PLZ Input Again - English or Korean : ")
-
-if "English" in lang:
-    text = input("Input Eng Lines : ")
-    tts = gTTS(text=text, lang='en')
-elif "Korean" in lang:
-    text = input("한국어로 문장을 입력하세요 : ")
-    tts = gTTS(text=text, lang='ko')
-else:
-    tts = gTTS(text="Good Bye", lang='en')
